@@ -158,16 +158,11 @@
                                     </div>
                                 @endif
 
+                                @foreach ($categories as $item)
                                 <div class="single_category wow fadeInDown">
-                                    @foreach ($categories as $item)
-
-
                                     <div class="category_title">
                                         <a href="{{route('detail', $item->formid)}}">{{ $item->catName }}</a>
                                     </div>
-
-
-
                                     <div class="single_category_inner">
                                         <ul class="catg_nav">
                                             <li class="news_item">
@@ -184,11 +179,8 @@
                                             </li>
                                         </ul>
                                     </div>
-
-
-
-                                    @endforeach
                                 </div>
+                                    @endforeach
 
                             </div>
                         </div>
